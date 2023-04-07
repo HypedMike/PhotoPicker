@@ -102,5 +102,5 @@ int save(Node *list, char *path){
 
 void *saveAsync(void *args){
     SaveAsyncInterface *sai = (SaveAsyncInterface *) args;
-    save(sai->list, sai->path);
+    save(*(sai->list), sai->path);
 }

@@ -17,7 +17,7 @@ typedef struct node_list{
 
 typedef struct saveasync_interface{
     char path[300];
-    Node *list;
+    Node **list;
 } SaveAsyncInterface;
 
 
